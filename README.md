@@ -14,6 +14,7 @@ This repository is the starter code for the project: Students will fork and clon
 ## Screenshots
 
 !("Screenshot of Tweeter Desktop")[https://github.com/fltfx/tweeter/blob/master/docs/Tweeter_Desktop.png?raw=true]
+
 !("Screenshot of Tweeter Tablet")[https://github.com/fltfx/tweeter/blob/master/docs/Tweeter_Tablet.png?raw=true]
 
 ## Dependencies
