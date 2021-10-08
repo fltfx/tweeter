@@ -1,25 +1,98 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
-html {
+/* Another tablet breakpoint is minimum width of 768px */
+@media only screen and (min-width: 0px) {
+  /* Write CSS rules that target Tablets screen sizes upwards - including desktops */
+  /*
+  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+  * https://css-tricks.com/international-box-sizing-awareness-day/
+  * Do not modify these two selectors, please
+  */
+  html {
   box-sizing: border-box;
-}
-*, *:before, *:after {
+  }
+
+  *, *:before, *:after {
   box-sizing: inherit;
-}
+  }
 
-/*
- * Global layout stuff
- */
+  /*
+  * Global layout stuff
+  */
 
-body {
+  #avatar {
+    display: block;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  div > h2{
+    font-style: normal;
+    font-weight: unset;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  header {
+  align-items: center;
+  background-color: #c0d46f;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  padding-top: 4em;
+  z-index: 1;
+  }
+
+  main {
+  align-items: center;
+  background-color: #f4f1ec;
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  }
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+/* Laptops / Desktops: minimum width of 1024px */
+@media only screen and (min-width: 1024px) {
+  /*target desktops only */
+  body {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  header {
+    align-items: center;
+    background-color: #c0d46f;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    margin: 20vh 0 0 0;
+    padding-top: 0;
+    position: relative;
+    width: 25vw;
+  }
+
+  main {
+    align-items: center;
+    background-color: #f4f1ec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20vh 0 0 0;
+    width: 50vw;
+  }
+}

@@ -1,0 +1,52 @@
+/* Another tablet breakpoint is minimum width of 768px */
+@media only screen and (min-width: 0px) {
+  .nav {
+    background-color: transparent;
+    box-sizing: inherit;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    justify-content: space-between;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    position: absolute;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 9;
+  }
+  
+  .nav span {
+    font-family: 'Bungee', cursive;
+    font-size: xx-large;
+    padding-top: 1em;
+  }
+  
+  .nav .nav-text {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .nav .nav-text div {
+    display: flex;
+    justify-content: center;
+  }
+  
+   .nav .nav-text .write {
+    margin-bottom: 0;
+  } 
+}
+
+/* Laptops / Desktops: minimum width of 1024px */
+@media only screen and (min-width: 1024px) {
+  /*target desktops only */
+  .nav {
+    background-color: #4056A1;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+}
+
